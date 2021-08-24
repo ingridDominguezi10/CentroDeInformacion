@@ -118,4 +118,9 @@ export default {
 .modal.show {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.otherTop{
+  top:-130px;
+  max-width: 600px !important;
+}
 </style>

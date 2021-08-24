@@ -17,10 +17,10 @@
           {{itemValue(item, column)}}
         </td>
         <td>
-          <base-button icon round class="btn-google" tooltip="Detalles">
+          <base-button icon round class="btn-google" v-tooltip="'Ver Detalles'">
             <i class="fa fa-eye"></i>
           </base-button>&nbsp;
-          <base-button icon round class="btn-google" tooltip="Eliminar">
+          <base-button icon round class="btn-google" v-tooltip="'Eliminar'">
             <i class="fa fa-trash"></i>
           </base-button>
         </td>
@@ -30,6 +30,10 @@
   </table>
 </template>
 <script>
+import Vue from 'vue'
+import VTooltip from 'v-tooltip'
+Vue.use(VTooltip)
+
   export default {
     name: 'base-table',
     props: {
